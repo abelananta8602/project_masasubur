@@ -78,8 +78,9 @@ class _MyAppState extends State<MyApp> {
                 margin: EdgeInsets.fromLTRB(50, 50, 50, 100),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.fromLTRB(40, 10, 40, 10),
-                  ),
+                      padding: EdgeInsets.fromLTRB(100, 10, 100, 10),
+                      shape: new RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10))),
                   onPressed: () {},
                   child: const Text(
                     "Hitung",
