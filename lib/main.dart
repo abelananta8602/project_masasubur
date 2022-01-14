@@ -43,7 +43,7 @@ class _MyAppState extends State<MyApp> {
               Container(
                 margin: EdgeInsets.fromLTRB(5, 30, 0, 0),
                 child: Text(
-                  "Hari Pertama Haid Terakhir  (HPHT)",
+                  "Hari Pertama Haid Terakhir (HPHT)",
                   style: GoogleFonts.poppins(
                       fontSize: 17, fontWeight: FontWeight.bold),
                 ),
