@@ -20,9 +20,12 @@ class _MyAppState extends State<MyApp> {
           preferredSize: Size.fromHeight(60),
           child: AppBar(
             backgroundColor: Colors.white,
-            leading: Icon(
-              Icons.arrow_back,
-              color: Colors.black,
+            leading: Container(
+              margin: EdgeInsets.fromLTRB(35, 0, 10, 0),
+              child: Icon(
+                Icons.arrow_back,
+                color: Colors.black,
+              ),
             ),
             title: Text(
               "Masa Subur",
@@ -38,7 +41,7 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.fromLTRB(5, 30, 40, 0),
+                margin: EdgeInsets.fromLTRB(5, 30, 0, 0),
                 child: Text(
                   "Hari Pertama Haid Terakhir  (HPHT)",
                   style: GoogleFonts.poppins(
@@ -88,7 +91,8 @@ class _MyAppState extends State<MyApp> {
                   child: Text(
                     "Hitung",
                     style: GoogleFonts.poppins(
-                        fontSize: 18, fontWeight: FontWeight.bold),
+                      fontSize: 18,
+                    ),
                   ),
                 ),
               ),
