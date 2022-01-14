@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,7 +26,7 @@ class _MyAppState extends State<MyApp> {
             ),
             title: Text(
               "Masa Subur",
-              style: TextStyle(
+              style: GoogleFonts.poppins(
                 color: Colors.black,
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -40,7 +41,8 @@ class _MyAppState extends State<MyApp> {
                 margin: EdgeInsets.fromLTRB(5, 30, 40, 0),
                 child: Text(
                   "Hari Pertama Haid Terakhir  (HPHT)",
-                  style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                  style: GoogleFonts.poppins(
+                      fontSize: 17, fontWeight: FontWeight.bold),
                 ),
               ),
               Container(
@@ -51,7 +53,7 @@ class _MyAppState extends State<MyApp> {
                       borderRadius: BorderRadius.circular(6),
                     ),
                     hintText: 'dd/mm/yyy',
-                    hintStyle: TextStyle(color: Colors.grey),
+                    hintStyle: GoogleFonts.poppins(color: Colors.grey),
                     suffixIcon: Icon(Icons.date_range_outlined),
                   ),
                 ),
@@ -60,7 +62,8 @@ class _MyAppState extends State<MyApp> {
                 margin: EdgeInsets.fromLTRB(0, 15, 100, 0),
                 child: Text(
                   "Lama Siklus Haid Rata-rata",
-                  style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                  style: GoogleFonts.poppins(
+                      fontSize: 17, fontWeight: FontWeight.bold),
                 ),
               ),
               Container(
@@ -71,7 +74,7 @@ class _MyAppState extends State<MyApp> {
                         borderRadius: BorderRadius.circular(6),
                       ),
                       hintText: 'Masukkan Jumlah Hari',
-                      hintStyle: TextStyle(color: Colors.grey)),
+                      hintStyle: GoogleFonts.poppins(color: Colors.grey)),
                 ),
               ),
               Container(
@@ -82,12 +85,13 @@ class _MyAppState extends State<MyApp> {
                       shape: new RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10))),
                   onPressed: () {},
-                  child: const Text(
+                  child: Text(
                     "Hitung",
-                    style: TextStyle(fontSize: 18),
+                    style: GoogleFonts.poppins(
+                        fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),
